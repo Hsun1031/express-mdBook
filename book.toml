@@ -1,0 +1,6 @@
+[book]
+authors = ["Hsun"]
+language = "zh-tw"
+multilingual = false
+src = "src"
+title = "express-mdBook"
