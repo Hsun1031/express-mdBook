@@ -37,7 +37,7 @@ const port = 3000;
 ```js
 app.get('/', (req, res) => res.send('Hello World!'));
 ```
-這個函示傳入了2個參數
+這個函式傳入了2個參數
 1. `'/'` 為 路徑，因此 http://localhost:3000`/` 的最後面有 `/`。
 2. `(req, res) => res.send('Hello World!')` 為 callback `function`，當使用者連入 `http://localhost:3000/` 時，會執行 callback function。
   - `req` 為 request 的縮寫，指客戶端(client)`傳入`伺服端(Server)的資料。
@@ -45,7 +45,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 
 因此代表
 ```js
-app.get(<傳入路徑>, <函示>);
+app.get(<傳入路徑>, <函式>);
 ```
 
 ### app.get 不同寫法
@@ -64,7 +64,7 @@ app.get('/', (req, res) => {
 app.get('/', (req, res) => res.send('Hello World!'););
 ```
 
-如果不同路徑使用相同函示，可以使用函示
+如果不同路徑使用相同函式，可以使用函式
 
 ```js
 app.get('/', hello);
