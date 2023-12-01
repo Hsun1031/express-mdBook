@@ -98,7 +98,7 @@ let xhr = new XMLHttpRequest();
 xhr.addEventListener('onreadystatechange', () => { });
 ```
 
-當傳送的 state 數值為 `4` 或者網頁狀態為 `200` 就顯示回傳的數值
+當傳送的 state 數值為 `4` 和網頁狀態為 `200` 就顯示回傳的數值
 ```js 
 if (xhr.readyState === 4 && xhr.status === 200) {
     console.log("xhr.responseText: " + xhr.responseText);
